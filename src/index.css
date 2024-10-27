@@ -1,0 +1,60 @@
+html {
+  background-color: #272727;
+  color: #fff;
+}
+.country {
+  border: 2px solid steelblue;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-content: center;
+}
+.visit-btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  color: #fff;
+  background-color: #0010f5c9;
+  border-radius: 8px;
+  border: none !important;
+  font-weight: 600;
+  width: 50%;
+  align-self: center;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.visit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.253);
+  transform: translateX(-300%);
+  transition: transform 0.5s;
+}
+
+.visit-btn:hover::before {
+  transform: translateX(0);
+}
+
+.visit-btn:hover {
+  background-color: #0e218b;
+}
+.visit-btn-txt {
+  display: flex;
+  flex-direction: column;
+}
+.visited {
+  background: linear-gradient(to bottom, #4698e5, #3bbf8c);
+  color: black;
+}
+.not {
+  background: linear-gradient(to bottom, #2a023a, #df9e9e);
+  color: rgb(255, 255, 255);
+}
